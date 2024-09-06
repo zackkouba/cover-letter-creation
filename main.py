@@ -17,22 +17,22 @@ def create_ui():
 
     tk.Label(root, text="Company Name").grid(row=0)
     entry_comp_name = tk.Entry(root)
-    entry_comp_name.insert(0, "Test Name")
+    # entry_comp_name.insert(0, "Test Name") # Uncomment for default value
     entry_comp_name.grid(row=0, column=1)
 
     tk.Label(root, text="Company Address").grid(row=1)
     entry_comp_address = tk.Entry(root)
-    entry_comp_address.insert(0, "Test Address")
+    # entry_comp_address.insert(0, "Test Address") # Uncomment for default value
     entry_comp_address.grid(row=1, column=1)
 
     tk.Label(root, text="Job Position").grid(row=2)
     entry_position = tk.Entry(root)
-    entry_position.insert(0, "Test Position")
+    # entry_position.insert(0, "Test Position") # Uncomment for default value
     entry_position.grid(row=2, column=1)
 
     tk.Label(root, text="Specific Area of Interest").grid(row=3)
     entry_aoi = tk.Entry(root)
-    entry_aoi.insert(0, "Test AOI")
+    # entry_aoi.insert(0, "Test AOI") # Uncomment for default value
     entry_aoi.grid(row=3, column=1)
 
     submit_button = tk.Button(root, text="Create", command=submit_inputs)
