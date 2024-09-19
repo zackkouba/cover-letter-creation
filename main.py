@@ -64,7 +64,8 @@ def input_to_word(replacements):
     output_pdf_name = f"Zachary Kouba Cover Letter {replacements['[Company Name]']}.pdf"
 
     output_doc_filepath = os.path.join(WORKING_DIR, output_doc_name)
-    output_pdf_filepath = os.path.join(WORKING_DIR, output_pdf_name)
+    # output_pdf_filepath = os.path.join(WORKING_DIR, output_pdf_name)
+    output_pdf_filepath = os.path.join("../professional-documents/Cover Letters", output_pdf_name)
 
     try:
         doc.save(output_doc_filepath)
